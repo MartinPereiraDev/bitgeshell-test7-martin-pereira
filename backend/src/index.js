@@ -18,8 +18,9 @@ app.use(morgan('dev'));
 app.use('/api/items', itemsRouter);
 app.use('/api/stats', statsRouter);
 
-// Not Found
-app.use('*', notFound);
+
+// Middleware de manejo de errores (debe ir al final)
+app.use(notFound);
 
 getCookie();
 

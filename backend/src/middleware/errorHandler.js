@@ -1,9 +1,8 @@
 const axios = require('axios');
 
-const notFound = (req, res, next) => {
-  const err = new Error('Route Not Found');
-  err.status = 404;
-  next(err);
+
+function notFound(err, req, res, next) {
+  res.status(err.status || 500).json({ error: err.message || 'Internal Server Error' });
 }
 
 const errorHandler = (error) => {
