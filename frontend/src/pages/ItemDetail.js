@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
+
 function ItemDetail() {
   const { id } = useParams();
   const [item, setItem] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('/api/items/' + id)
+    fetch(`${API_BASE_URL}/api/items/${id}`)
       .then(res => res.ok ? res.json() : Promise.reject(res))
       .then(setItem)
       .catch(() => navigate('/'));
