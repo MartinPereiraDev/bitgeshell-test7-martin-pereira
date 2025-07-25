@@ -45,7 +45,7 @@ describe('Items API', () => {
   const newItem = { name: 'Test Item', category: 'Test Category', price: 100 };
   const res = await request(app).post('/api/items').send(newItem);
 
-  // Agrega este bloque para ver el error si el test falla
+  // error if the test fails
   if (res.statusCode !== 201) {
     console.error('POST ERROR:', res.body);
   }
@@ -83,7 +83,7 @@ describe('Items API', () => {
   });
 });
 
-const itemSchema = Joi.object({
+const itemCreateSchema = Joi.object({
   name: Joi.string().required(),
   category: Joi.string().required(),
   price: Joi.number().min(0).required()

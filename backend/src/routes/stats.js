@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const router = express.Router();
 const DATA_PATH = path.join(process.cwd(), 'data', 'items.json');
+const { mean, minItem, maxItem } = require('../utils/stats');
 
 // --- MEMORY CACHE ---
 let cachedStats = null;
@@ -29,7 +30,9 @@ router.get('/', async (req, res, next) => {
       const items = JSON.parse(raw);
       const stats = {
         total: items.length,
-        averagePrice: items.length > 0 ? items.reduce((acc, cur) => acc + cur.price, 0) / items.length : 0
+        averagePrice: items.length > 0 ? mean(items.map(item => item.price)) : 0,
+        minPriceItem: items.length > 0 ? minItem(items, 'price') : null,
+        maxPriceItem: items.length > 0 ? maxItem(items, 'price') : null
       };
       cachedStats = stats;
       res.json(stats);

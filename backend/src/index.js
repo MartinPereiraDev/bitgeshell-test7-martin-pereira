@@ -19,7 +19,6 @@ app.use('/api/items', itemsRouter);
 app.use('/api/stats', statsRouter);
 
 
-// Middleware de manejo de errores (debe ir al final)
 app.use(notFound);
 
 getCookie();

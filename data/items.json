@@ -1,7 +1,86 @@
 [
-  { "id": 1, "name": "Laptop Pro", "category": "Electronics", "price": 2499 },
-  { "id": 2, "name": "Noise Cancelling Headphones", "category": "Electronics", "price": 399 },
-  { "id": 3, "name": "Ultra‑Wide Monitor", "category": "Electronics", "price": 999 },
-  { "id": 4, "name": "Ergonomic Chair", "category": "Furniture", "price": 799 },
-  { "id": 5, "name": "Standing Desk", "category": "Furniture", "price": 1199 }
+  {
+    "id": 1,
+    "name": "Laptop Pro",
+    "category": "Electronics",
+    "price": 2499
+  },
+  {
+    "id": 2,
+    "name": "Laptop Ultra 3",
+    "category": "Electronics",
+    "price": 765
+  },
+  {
+    "id": 3,
+    "name": "Ultra-Wide Monitor",
+    "category": "Electronics",
+    "price": 999
+  },
+  {
+    "id": 4,
+    "name": "Ergonomic Chair",
+    "category": "Furniture",
+    "price": 799
+  },
+  {
+    "id": 5,
+    "name": "Standing Desk",
+    "category": "Furniture",
+    "price": 1199
+  },
+  {
+    "name": "Laptop Pro 15",
+    "category": "Electronics",
+    "price": 2499,
+    "id": 6
+  },
+  {
+    "name": "Laptop Pro 16",
+    "category": "Electronics",
+    "price": 7841,
+    "id": 7
+  },
+  {
+    "name": "Laptop Pro 18",
+    "category": "Electronics",
+    "price": 8841,
+    "id": 8
+  },
+  {
+    "name": "Laptop Pro 20",
+    "category": "Electronics",
+    "price": 8841,
+    "id": 9
+  },
+  {
+    "name": "Laptop Basic 20",
+    "category": "Electronics",
+    "price": 841,
+    "id": 10
+  },
+  {
+    "name": "Laptop Basic 100",
+    "category": "Electronics",
+    "price": 841,
+    "id": 11
+  },
+  {
+    "name": "Laptop Basic 150",
+    "category": "Electronics",
+    "price": 841,
+    "id": 12
+  },
+  {
+    "name": "Laptop Ultra 250",
+    "category": "Electronics",
+    "price": 841,
+    "id": 13
+  },
+  {
+    "name": "Laptop Ultra 250B",
+    "category": "Electronics",
+    "price": 1841,
+    "id": 14
+  }
 ]

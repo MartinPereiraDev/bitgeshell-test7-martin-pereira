@@ -19,8 +19,6 @@ Thumbs.db
 frontend/.env
 backend/.env
 
-# Data
-/data/
 
 # Build output
 dist/
